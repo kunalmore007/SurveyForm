@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid Survey |</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+<body>
+    <div class="covid-form-survey-container">
+        <form name="form1" onsubmit="return(validateAndShow());">
+            <div class="main-heading">
+                <h1>Covid Vaccination Preference Survey</h1>
+            </div>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <td class="td-container">
+                            <label>Name</label>
+                        </td>
+                        <td >
+                            <input type="text" name="userName">
+                        </td>
+                        <td >
+                            <label id="unameError"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-container">
+                            <label>Gender</label>
+                        </td>
+                        <td>
+                            <input type="text" name="gender">
+                        </td>
+                        <td >
+                            <label id="genderError"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-container">
+                            <label>Age</label>
+                        </td>
+                        <td>
+                            <input type="number" name="age">
+                        </td>
+                        <td >
+                            <label id="ageError"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-container">
+                            <label>Preference</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="preference" value="Covaxin">
+                            <label>Covaxin</label><br>  
+                            <input type="radio" name="preference" value="Covishield">
+                            <label>Covishield</label>  
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-container" colspan="2" align="center">
+                            <button type="submit">Submit</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="form-data-container">
+                <table>
+                    <tr>
+                        <td class="td-container">
+                            <label>Name</label>
+                        </td>
+                        <td>
+                            <label id="setName"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-container">
+                            <label>Gender</label>
+                        </td>
+                        <td>
+                            <label id="setGender"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-container">
+                            <label>Age</label>
+                        </td>
+                        <td>
+                            <label id="setAge"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-container">
+                            <label>Preference</label>
+                        </td>
+                        <td>
+                            <label id="setPref"></label>
+                        </td>
+                    </tr>
+                </table>
+        		<table>
+                    <tr>
+                        <td class="td-container">
+                            <label>Type of Vaccine</label>
+                        </td>
+                        <td>
+                            <label id="setVaccineName"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-container">
+                            <label>Second dose</label>
+                        </td>
+                        <td>
+                            <label id="setDose"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-container">
+                            <label>Side Effects</label>
+                        </td>
+                        <td>
+                            <label id="setSideEffects"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-container">
+                            <label>Precautions</label>
+                        </td>
+                        <td>
+                            <label id="setPrec"></label>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
+
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>
